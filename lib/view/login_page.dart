@@ -4,6 +4,7 @@ import 'package:flutter/src/widgets/framework.dart';
 
 class loginPage extends StatefulWidget {
   const loginPage({super.key});
+  static const String route = "login_screen";
 
   @override
   State<loginPage> createState() => _loginPageState();

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:latihan_soal/view/login_page.dart';
 import 'package:latihan_soal/view/splash_screen.dart';
 
 void main() {
@@ -25,7 +26,12 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const SplashScreen(),
+      //home: const SplashScreen(),
+      initialRoute: "/",
+      routes: {
+        "/": (context) => const SplashScreen(),
+        loginPage.route: (context) => const loginPage()
+      },
     );
   }
 }

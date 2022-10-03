@@ -8,12 +8,12 @@ import 'package:latihan_soal/view/login_page.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
+  static const String route = "splash_screen";
 
   @override
   Widget build(BuildContext context) {
     Timer(Duration(seconds: 5), () {
-      Navigator.of(context)
-          .push(MaterialPageRoute(builder: (context) => loginPage()));
+      Navigator.of(context).pushNamed(loginPage.route);
     });
     return Scaffold(
       backgroundColor: Color(0xff01bdc2),
