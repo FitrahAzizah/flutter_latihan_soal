@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:latihan_soal/view/login_page.dart';
+import 'package:latihan_soal/view/register_page.dart';
 import 'package:latihan_soal/view/splash_screen.dart';
 
 void main() {
@@ -30,7 +31,8 @@ class MyApp extends StatelessWidget {
       initialRoute: "/",
       routes: {
         "/": (context) => const SplashScreen(),
-        loginPage.route: (context) => const loginPage()
+        loginPage.route: (context) => const loginPage(),
+        RegisterPage.route: (context) => RegisterPage()
       },
     );
   }
